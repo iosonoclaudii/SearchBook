@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <title>SearchBook</title>
+    <script defer src="/bundle.js"></script></head>
+<body>
+  <div class="head">
+    
+  <h1>Search Book</h1>
+  
+  </div>
+  <p class="introd">Abandon all hope, ye who enter here</p>
+  <div class="search-box">
+    <form id="search-form">
+      <input class="search-box-int" type="text" placeholder="Enter a category...">
+      <button class="submit" type="submit">Cerca</button>
+    </form>
+  </div>
+
+  <div id="results" class="book-grid"></div>
+
+  <div id="modal" class="modal">
+    <div id="modalContent" class="modal-content">
+      <span id="closeModalButton">&times;</span>
+      <div id="modalDescription" class="description"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

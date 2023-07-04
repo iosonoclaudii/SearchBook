@@ -1,0 +1,171 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #87CEEB;
+  }
+
+  /* Titolo */
+  h1 {
+text-align: center;
+color: #333;
+font-size: 50px;
+}
+
+.head {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.introd{
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+
+  /* Casella di ricerca */
+  .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  /* Input di ricerca */
+  .search-box-int {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    outline: none;
+  }
+
+  /* Pulsante di ricerca */
+  .submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #7a66ae;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  /* Hover del pulsante di ricerca */
+  .submit:hover {
+    background-color: #5838a9;
+  }
+
+  /* Stile dei risultati */
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .book-result {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 20px;
+    background: #F2F8FD;
+
+  }
+
+  .book-result h3 {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .book-result p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .book-cover {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    
+
+  }
+
+  .description {
+    margin-top: 10px;
+  }
+
+  .description.open {
+    display: block;
+  }
+
+  .description-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #7a66ae;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  .description-button:hover {
+    background-color: #5838a9;
+  }
+
+  .close-button {
+    display: none;
+    background-color: #ccc;
+    border: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Stili per la finestra modale */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(222, 222, 222, 0.5);
+    
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 100px auto;
+    padding: 20px;
+    max-width: 400px;
+    min-height: 200px;
+    text-align: center;
+    border-radius: 25px;
+  }
+
+  #closeModalButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
